@@ -15,12 +15,14 @@ if(isset($_POST['nombre'])){
 <?php
 if(isset($_COOKIE['nombre_usuario'])){
     echo "Bienvenido ".$_COOKIE["nombre_usuario"];
-}
-?>
+}else{
 <h2>Cual es tu nombre?</h2>
 <form method="post">
     <input type="text" name="nombre" size="25">
     <input type="submit" value="Enviar">
 </form>
+}
+?>
+
 </body>
 </html>
